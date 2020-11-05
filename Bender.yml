@@ -1,0 +1,20 @@
+package:
+  name: hwpe-mac-engine
+  authors: 
+    - "Francesco Conti <f.conti@unibo.it>"
+
+dependencies:
+  hwpe-ctrl: { git: "git@github.com:micprog/hwpe-ctrl.git", rev: "d1de24ae8ac04bf98375fc7f34443daeee9b4d8c" }
+  hwpe-stream: { git: "git@github.com:micprog/hwpe-stream.git", rev: "da0471e9cb71e59a3cd4879a0d9bc248440018ac" }
+
+sources:
+  - include_dirs:
+      - rtl
+    files:
+      - rtl/mac_package.sv
+      - rtl/mac_fsm.sv
+      - rtl/mac_ctrl.sv
+      - rtl/mac_streamer.sv
+      - rtl/mac_engine.sv
+      - rtl/mac_top.sv
+      - wrap/mac_top_wrap.sv
