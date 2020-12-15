@@ -92,7 +92,7 @@ module mac_top
   );
 
   mac_ctrl #(
-    .N_CORES   ( 2  ),
+    .N_CORES   ( N_CORES  ),
     .N_CONTEXT ( 2  ),
     .N_IO_REGS ( 16 ),
     .ID ( ID )
